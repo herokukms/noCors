@@ -1,8 +1,8 @@
 {
-  "name": "allorigins",
+  "name": "nocors",
   "description": "Pull contents from any page as JSON via API",
-  "author": "Gabriel Nunes <gabriel@multiverso.me>",
-  "version": "2.7.0",
+  "author": "based on Gabriel Nunes <gabriel@multiverso.me>",
+  "version": "2.8.0",
   "main": "server.js",
   "license": "MIT",
   "type": "module",

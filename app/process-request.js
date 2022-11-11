@@ -10,6 +10,7 @@ export default processRequest;
 
 async function processRequest(req, res) {
   console.log(`${new Date().toISOString()}: Processing request from ${req.client.localAddress}`)
+  console.log(req.headers)
   const startTime = new Date()
   const params = parseParams(req)
 
