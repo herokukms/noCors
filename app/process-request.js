@@ -9,8 +9,8 @@ const MIN_CACHE_TIME = 5 * 60 // 5 minutes
 export default processRequest;
 
 async function processRequest(req, res) {
-  console.log(`${new Date().toISOString()}: Processing request from ${req.client.localAddress}`)
-  console.log(req.headers)
+  const ip = typeof req.headers['cf-connecting-ip'] === 'undefined' ? req.client.localAddress : req.headers['cf-connecting-ip']
+  console.log(`${new Date().toISOString()}: Processing request from ${ip}`)
   const startTime = new Date()
   const params = parseParams(req)
 
