@@ -33,7 +33,7 @@ export default (function defaultGot() {
   gotOptions.handlers = [
     (options, next) => {
       gotOptions.cache = storageAdapter
-      console.log(`Sending ${options.method} to ${options.url}`);
+      console.log(`Proxying ${options.method} to ${options.url}`);
       return next(options)
     },
   ]
